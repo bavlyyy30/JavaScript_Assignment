@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="validation.html">Registration</a>
+        <a href="data.html">Data Table</a>
+    </nav>
+
+    <main class="container">
+        <h1>Registration Form</h1>
+
+        <form id="registrationForm" novalidate>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small class="error" id="nameError"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <small class="error" id="emailError"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small class="error" id="passwordError"></small>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm password">
+            <small class="error" id="confirmPasswordError"></small>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+            <small class="error" id="ageError"></small>
+
+            <button type="submit">Register</button>
+
+            <p id="successMessage" class="success"></p>
+
+        </form>
+    </main>
+
+</body>
+</html>

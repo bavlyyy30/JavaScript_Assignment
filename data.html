@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="validation.html">Registration</a>
+        <a href="data.html">Data Table</a>
+    </nav>
+
+    <main class="container">
+        <h1>People Data</h1>
+
+        <label for="searchInput">Search</label>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name or city..."
+        >
+
+        <div class="buttons">
+            <button type="button" id="sortName">
+                Sort by Name
+            </button>
+
+            <button type="button" id="sortAge">
+                Sort by Age
+            </button>
+        </div>
+
+        <p id="resultsMessage"></p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody">
+                    <!-- JavaScript creates the rows here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>
